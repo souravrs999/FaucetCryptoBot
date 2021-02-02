@@ -30,48 +30,6 @@
 ## [Faucet Crypto]('https://faucetcrypto.com/')
 <img src="media/fc-home-sc.png" alt="Faucet Crypto landing page" style="float: center; margin-right: 10px;" width="1000"/>
 
-### Ways of Earning
-
-List of the types of tasks you can do to earn money using our service. Each task has a different way to complete!
-
-##### Ptc Advertisements
-
-This task is very comfortable to complete, you just need to watch some advertised websites and you will receive your coins.
-
-##### Offerwalls
-
-A nice way to earn a lot of Coins by answering some questions, registering on services and downloading apps.
-
-##### Faucet Claim
-
-This task is the simplest one, you just need to click a button to get the reward, but the button only enables every 30 minutes.
-
-### Unique Features
-
-##### Direct withdraw
-
- Withdraw your earnings straight to your wallet. We pay directly via the blockchain. The owner of your money must be you and not a third party microwallet service.
-
-##### Referral commission
-
-Share your referral link with your friends and earn 20% of all their earnings for lifetime. Track your earnings on our advanced referral statistics panel.
-
-##### Level up system
-
-Complete tasks and earn levels, every level you reach, your reward get increased for lifetime. Combine this bonus with your items and multiply your earnings! 
-
-### Items System
-
-The items system made completing tasks much less repetitive You will be able to win items that gives several different types of bonuses to your account.
-
-##### Market
-
-On the market place, you can buy and sell your items with the price you set to other real users of the website.
-
-##### Inventory
-
-Your inventory is where you store all your dropped and purchased items. So you can use it any time without risk
-
 <!-- Browser preference -->
 ### Brave Browser
 
@@ -81,6 +39,55 @@ If you don't have Brave browser installed you can download it from here.
 
 <p align="center">
 <a href="https://brave.com/">
-<img src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="150"/>
+<img src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="100"/>
 </a>
 </p>
+
+### Installation
+
+create a virtual environment with virtualenv
+
+``` bash
+virtualenv env
+```
+
+Activate the virtual environment
+
+```bash
+source env/bin/activate
+```
+
+Install all the necessary packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### Setup
+
+Set the correct path for your brave browser in the config file config.py
+``` python
+"" Path to your defautl browser profile directory ""
+USER_DATA_DIR = "/home/darkstalker/.config/BraveSoftware/Brave-Browser"
+
+"" Path to your browser binary location ""
+BROWSER_BINARY_LOCATION = "/usr/bin/brave-browser"
+
+"" Path to your chromedriver binary path ""
+DRIVER_PATH = "/usr/local/bin/chromedriver"
+
+"" Headless mode flag runs the browser without UI ""
+# params: <headless> or <empty>
+DRIVER_MODE = ""
+
+"" If set to true will show warnings and errors in the terminal else logs it to error-logs.txt file ""
+DEBUG = False"
+```
+
+### Run
+
+Run the bot by
+
+``` bash
+python bot.py
+```
