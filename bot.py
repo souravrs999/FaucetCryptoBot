@@ -1,4 +1,4 @@
-from fc_bot import FaucetCryptoBot
+from FaucetCryptoBot import FaucetCryptoBot
 
 def faucet_bot():
 
