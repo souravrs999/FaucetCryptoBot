@@ -91,3 +91,26 @@ Run the bot by
 ``` bash
 python bot.py
 ```
+<!-- screenshot -->
+
+<img src="media/bot-sc-1.png" alt="Bot terminal" style="float: center; margin-right: 10px;" width="1000"/>
+
+### Account setup
+
+If it's your first time running the bot you need to login to Faucet crypto.
+Run the bot in normal-mode(default) it will redirect to login page where you can login,
+the bot will do the rest from there by collecting from all the ads. (Note) The bot can't
+yet do the exe.io and fc.lc shortlinks so you would have to help it do that. If you've logged in successfully then you can run the bot in headless mode from then on you can set the bot
+to headless mode by setting the "headless" flag in the config file.
+
+```python
+DRIVER_MODE = "headless"
+```
+
+### Contributions
+
+Feel free to contribute to this project and help me improve this project
+
+
+Thank You, 
+    Sourav

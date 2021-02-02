@@ -181,3 +181,26 @@
 [ 2021-02-01 18:04:27 ] [  ERROR  ] Message: unknown error: net::ERR_INTERNET_DISCONNECTED
   (Session info: chrome=88.0.4324.96)
 
+[ 2021-02-02 12:24:09 ] [  ERROR  ] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[4]/div/div/div[1]/h3"}
+  (Session info: chrome=88.0.4324.96)
+
+[ 2021-02-02 12:24:09 ] [  ERROR  ] 'NoneType' object has no attribute 'text'
+[ 2021-02-02 12:26:48 ] [  ERROR  ] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/div[1]/div[2]/div/div[2]/span/a"}
+  (Session info: chrome=88.0.4324.96)
+
+[ 2021-02-02 12:26:48 ] [  ERROR  ] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div[1]/div[1]/h3"}
+  (Session info: chrome=88.0.4324.96)
+
+[ 2021-02-02 12:26:48 ] [  ERROR  ] 'NoneType' object has no attribute 'text'
+[ 2021-02-02 12:26:48 ] [  ERROR  ] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div[1]/div[1]/h3"}
+  (Session info: chrome=88.0.4324.96)
+
+[ 2021-02-02 12:26:48 ] [  ERROR  ] 'NoneType' object has no attribute 'text'
+[ 2021-02-02 12:26:48 ] [  ERROR  ] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div[1]/div[1]/h3"}
+  (Session info: chrome=88.0.4324.96)
+
+[ 2021-02-02 12:26:48 ] [  ERROR  ] 'NoneType' object has no attribute 'text'
+[ 2021-02-02 12:26:48 ] [  ERROR  ] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div[1]/div[1]/h3"}
+  (Session info: chrome=88.0.4324.96)
+
+[ 2021-02-02 12:26:48 ] [  ERROR  ] 'NoneType' object has no attribute 'text'
