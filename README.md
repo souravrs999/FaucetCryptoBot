@@ -1,6 +1,7 @@
 <!-- Logo and description part -->
 <div align="center">
 <img src="media/fc-bot-logo.png" alt="Faucet Crypto Bot logo" width="200"/>
+<br>
 <p> A bot for the high paying popular cryptocurrency faucet Faucet Crypto. The bot is built using Python and Selenium, currently it is under active development and can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 </p>
 </div>
@@ -80,6 +81,6 @@ If you don't have Brave browser installed you can download it from here.
 
 <p align="center">
 <a href="https://brave.com/">
-<img src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="200"/>
+<img src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="150"/>
 </a>
 </p>
