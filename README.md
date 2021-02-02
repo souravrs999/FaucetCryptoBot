@@ -1,8 +1,12 @@
 <!-- Logo and description part -->
 <div align="center">
 <img src="media/fc-bot-logo.png" alt="Faucet Crypto Bot logo" width="200"/>
+<p>
 <br>
-<p> A bot for the high paying popular cryptocurrency faucet Faucet Crypto. The bot is built using Python and Selenium, currently it is under active development and can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
+<br>
+A bot for the high paying popular cryptocurrency faucet Faucet Crypto.
+The bot is built using Python and Selenium, currently it is under active development and,
+can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 </p>
 </div>
 
@@ -33,7 +37,9 @@
 <!-- Browser preference -->
 ### Brave Browser
 
-The browser of choice for this project is Brave browser due to its native ad-blocking scripts which are pretty good and prevents random popup openings, which can mess with the bots proper execution.
+The browser of choice for this project is Brave browser due to its native
+ad-blocking scripts which are pretty good and prevents random popup openings,
+which can mess with the bots proper execution.
 
 If you don't have Brave browser installed you can download it from here.
 
