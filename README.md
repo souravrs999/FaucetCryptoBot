@@ -1,6 +1,6 @@
 <!-- Logo and description part -->
 <div align="center">
-<img src="media/fc-bot-logo.png" alt="Faucet Crypto Bot logo"/>
+<img src="media/fc-bot-logo.png" alt="Faucet Crypto Bot logo" width="300"/>
 <p> A bot for the high paying popular cryptocurrency faucet Faucet Crypto. The bot is built using Python and Selenium, currently it is under active development and can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 </p>
 </div>
@@ -21,7 +21,7 @@
 </a>
 <!-- Chrome driver badge -->
 <a href="https://chromedriver.chromium.org/downloads">
-<img src="https://img.shields.io/badge/CHROME-DRIVER-88.0-3B82F6.svg?style=for-the-badge" alt="chromium driver for selenium"/>
+<img src="https://img.shields.io/badge/CHROME DRIVER-88.0-3B82F6.svg?style=for-the-badge" alt="chromium driver for selenium"/>
 </a>
 </p>
 
@@ -78,4 +78,6 @@ The browser of choice for this project is Brave browser due to its native ad-blo
 
 If you don't have Brave browser installed you can download it from here.
 
-<img href="https://brave.com/" src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="100"/>
+<p align="center">
+<img href="https://brave.com/" src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="300"/>
+</p>
