@@ -10,22 +10,20 @@
 <p align="center">
 <a href="https://www.python.org/">
 <img src="https://img.shields.io/badge/PYTHON-3.8-3B82F6.svg?style=for-the-badge" alt="made with python"/>
-</a
+</a>
 <!-- Selenium badge -->
-<p align="center">
 <a href="https://www.selenium.dev/">
 <img src="https://img.shields.io/badge/SELENIUM-3.141.0-3B82F6.svg?style=for-the-badge" alt="Selenium webdriver"/>
 </a>
 <!-- Brave badge -->
-<p align="center">
 <a href="https://brave.com/">
 <img src="https://img.shields.io/badge/BRAVE-88.0-3B82F6.svg?style=for-the-badge" alt="Brave browser"/>
 </a>
 <!-- Chrome driver badge -->
-<p align="center">
 <a href="https://chromedriver.chromium.org/downloads">
-<img src="https://img.shields.io/badge/CHROME DRIVER-88.0-3B82F6.svg?style=for-the-badge" alt="chromium driver for selenium"/>
+<img src="https://img.shields.io/badge/CHROME-DRIVER-88.0-3B82F6.svg?style=for-the-badge" alt="chromium driver for selenium"/>
 </a>
+</p>
 
 <!-- Description -->
 ## [Faucet Crypto]('https://faucetcrypto.com/')
@@ -80,4 +78,4 @@ The browser of choice for this project is Brave browser due to its native ad-blo
 
 If you don't have Brave browser installed you can download it from here.
 
-<img href="https://brave.com/" src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="1000"/>
+<img href="https://brave.com/" src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="100"/>
