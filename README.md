@@ -30,6 +30,12 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 </a>
 </p>
 
+<!-- Status -->
+<p align="center">
+<br>
+<img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/>
+</p>
+
 <!-- Description -->
 ## [Faucet Crypto]('https://faucetcrypto.com/')
 <img src="media/fc-home-sc.png" alt="Faucet Crypto landing page" style="float: center; margin-right: 10px;" width="1000"/>
