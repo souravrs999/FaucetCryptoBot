@@ -11,7 +11,7 @@ def faucet_bot():
             bot.get_main_reward()
             bot.get_ptc_ads()
             bot.get_shortlink_ads()
-            bot.sleep(0.01)
+            bot.sleep(10)
 
         except Exception as e:
             bot.error_handler(e)

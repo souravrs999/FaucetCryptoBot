@@ -296,6 +296,7 @@ class FaucetCryptoBot:
                 ).text
                 reward_coin_msg = f"Reward coins: {link} [{reward_coin}]"
                 self.log.write_log("bot", reward_coin_msg)
+                self._random_wait(5, 10)
                 pass
 
             def fc_lc():
@@ -310,6 +311,7 @@ class FaucetCryptoBot:
                 ).text
                 reward_coin_msg = f"Reward coins: {link} [{reward_coin}]"
                 self.log.write_log("bot", reward_coin_msg)
+                self._random_wait(5, 10)
                 pass
 
             def sh_faucetcrypto_com():
@@ -468,20 +470,20 @@ class FaucetCryptoBot:
             dict.get(link, default)()
 
         for links in shortlinks:
-            if links.lower() in ["general", "exe.io", "fc.lc"]:
+            if links.lower() == "general":
                 continue
 
-                try:
-                    view_count = self.__get_xpath_elem(
-                        shortlinks[links]["shortlinks-view-count"]
-                    ).text[0]
-                    if int(view_count) > 0:
-                        self.log.write_log("bot", self.log.green_text(links.upper()))
-                        switch(links)
+            try:
+                view_count = self.__get_xpath_elem(
+                    shortlinks[links]["shortlinks-view-count"]
+                ).text[0]
+                if int(view_count) > 0:
+                    self.log.write_log("bot", self.log.green_text(links.upper()))
+                    switch(links)
 
-                except Exception as e:
+            except Exception as e:
 
-                    if self.debug:
-                        self.log.write_log("warning", e)
-                    else:
-                        self.error_handler(e)
+                if self.debug:
+                    self.log.write_log("warning", e)
+                else:
+                    self.error_handler(e)

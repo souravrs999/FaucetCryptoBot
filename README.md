@@ -34,6 +34,9 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 ## [Faucet Crypto]('https://faucetcrypto.com/')
 <img src="media/fc-home-sc.png" alt="Faucet Crypto landing page" style="float: center; margin-right: 10px;" width="1000"/>
 
+<!-- Star reminder -->
+#### If you found this repo useful please don't forget to give me a :star:
+
 <!-- Browser preference -->
 ### Brave Browser
 

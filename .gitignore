@@ -1,0 +1,9 @@
+.git
+build
+dist
+env
+__pycache__
+fc_bot/__pycache__
+bot.spec
+error-logs.txt
+fc-bot-logo.png
