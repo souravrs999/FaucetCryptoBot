@@ -54,13 +54,13 @@ If you don't have Brave browser installed you can download it from here.
 
 <p align="center">
 <a href="https://brave.com/">
-<img src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="100"/>
+<img src="media/brave-logo.png" style="float: center; margin-right: 10px;" width="70"/>
 </a>
 </p>
 
 ### Changes
 
-- Added logic to save cookies and use them for logging in this prevents
+- Added logic to save cookies and use them for logging in. This prevents
 using the default profile directory of your browser and dosen't mess it up.
 
 - Added logic to close the welcome modal and chat which covered the dashboard
@@ -112,7 +112,7 @@ password =                  #your faucet crypto account password
 [Misc]
 debug =                     #takes two arguments True of False
 proxy =                     #proxy address and port try not to use a proxy
-                             and leave this empty
+                            #and leave this empty
 ```
 
 ### Run
@@ -135,7 +135,7 @@ yet do the exe.io and fc.lc shortlinks so you would have to help it do that. If 
 to headless mode by setting the "headless" flag in the config file.
 
 ```python
-DRIVER_MODE = "headless"
+browser-mode = "headless"
 ```
 
 ### Contributions
