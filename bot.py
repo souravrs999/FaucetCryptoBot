@@ -5,6 +5,7 @@ def faucet_bot():
     bot = FaucetCryptoBot()
     while True:
         try:
+            bot.login_handler()
             bot.get_user_balance()
             bot.get_user_level()
             bot.get_current_coin_rate()

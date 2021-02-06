@@ -1,8 +1,10 @@
 user = {
     "user-email-field": "/html/body/div[1]/div[2]/div/div/div[1]/div/input",
     "user-password-field": "/html/body/div[1]/div[2]/div/div/div[2]/div/input",
-    "user-remember-me": '//*[@id="0c55fz4r9l"]',
+    "user-remember-me": '/html/body/div[1]/div[2]/div/div/div[3]/div',
     "user-login-btn": "/html/body/div[1]/div[2]/div/div/div[4]/button",
+    "user-modal-close": "/html/body/div[1]/div[10]/div/div/div[2]/div[3]/span[1]/button",
+    "user-chat-close": '//*[@id="container_auto_movable_0031003200320030003700380039"]/div[1]/div[9]/table/tbody/tr/td[3]/button',
     "user-level": "/html/body/div[1]/div[1]/div/div[2]/div/div/div[3]/div[2]/div[1]/p[1]",
     "user-coin-rate": "/html/body/div[1]/div[1]/div/div[2]/div/div/div[3]/div[1]/p/span[1]",
     "user-level-percent": "/html/body/div[1]/div[1]/div/div[2]/div/div/div[3]/div[2]/div[1]/p[2]",
@@ -40,7 +42,7 @@ shortlinks = {
         "shortlinks-completed": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[2]/div/div/div[1]/h3",
         "shortlinks-available": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[3]/div/div/div[1]/h3",
         "shortlinks-earnable-coins": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[4]/div/div/div[1]/h3",
-        'shortlinks-reward-claim-btn': '/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span/button'
+        "shortlinks-reward-claim-btn": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span/button",
     },
     "exe.io": {
         "shortlinks-view-count": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/div[1]/div[2]/div[1]/div/div[1]/div",

@@ -1,45 +1,83 @@
+import pickle5 as pickle
+
 from selenium import webdriver
 from selenium.webdriver import Chrome
 
 from .utils import *
 from .log import Log
 from .xpath import *
-from .config import *
 
 
 class FaucetCryptoBot:
     def __init__(self):
 
-        self.user = user
+        self.debug = self._configParser()[5]
+        self.proxy = self._configParser()[6]
+        self.user_mail = self._configParser()[3]
+        self.user_pswd = self._configParser()[4]
+        self.driver_path = self._configParser()[1]
+        self.browser_mode = self._configParser()[0]
+        self.browser_binary_location = self._configParser()[2]
+
         self.log = Log()
-        self.driver = Chrome(options=self._get_opts(), executable_path=DRIVER_PATH)
+        self.driver = Chrome(options=self._get_opts(), executable_path=self.driver_path)
         self.dash_board_url = "https://faucetcrypto.com/dashboard"
+        self.login_url = "https://faucetcrypto.com/login"
         self.banner = draw_banner()
         self.log.write_log(
             "browser", f"starting browser session: {self.driver.session_id}"
         )
         self.main_window = self.driver.current_window_handle
-        self.debug = DEBUG
 
     def _get_opts(self):
 
         opts = webdriver.chrome.options.Options()
 
-        if DRIVER_MODE == "headless":
+        if self.browser_mode == "headless":
             opts.add_argument("--headless")
+        if self.proxy != "":
+            opts.add_argument("--proxy-server=%s" % self.proxy)
+
         opts.add_argument("--no-sandbox")
         opts.add_argument("--disable-dev-shm-usage")
-        opts.binary_location = BROWSER_BINARY_LOCATION
+        opts.binary_location = self.browser_binary_location
         opts.add_argument("--ignore-certificate-erors")
         opts.add_argument("window-size=1920,1080")
         opts.add_argument("start-maximized")
-        opts.add_argument("user-data-dir=" + USER_DATA_DIR)
+        # opts.add_argument("user-data-dir=" + USER_DATA_DIR)
         opts.add_argument("disable-infobars")
         opts.add_experimental_option("excludeSwitches", ["disable-popup-blocking"])
         opts.add_experimental_option("excludeSwitches", ["enable-automation"])
         opts.add_experimental_option("useAutomationExtension", False)
 
         return opts
+
+    def _configParser(self):
+
+        from configparser import ConfigParser
+
+        config = ConfigParser()
+        config.readfp(open(f"config.cfg"))
+
+        browser_mode = config.get("Browser", "browser-mode")
+        driver_path = config.get("Browser", "driver-path")
+        browser_binary_location = config.get("Browser", "browser-binary-location")
+
+        user_mail = config.get("User", "mail")
+        user_pswd = config.get("User", "password")
+
+        debug = config.get("Misc", "debug")
+        proxy = config.get("Misc", "proxy")
+
+        return (
+            browser_mode,
+            driver_path,
+            browser_binary_location,
+            user_mail,
+            user_pswd,
+            debug,
+            proxy,
+        )
 
     def quit(self):
         self.driver.close()
@@ -110,6 +148,15 @@ class FaucetCryptoBot:
             self.log.write_log("warning", "Oops looks like i'm caught")
             return False
 
+    def _modal_handler(self):
+
+        try:
+            self._click(user["user-modal-close"], "modal")
+            self._click(user["user-chat-close"], "chat")
+
+        except Exception as e:
+            pass
+
     def get_user_balance(self):
 
         if self.driver.current_url != self.dash_board_url:
@@ -137,20 +184,45 @@ class FaucetCryptoBot:
         coin_rate_msg = "Coin rate: " + self.log.yellow_text(coin_rate)
         self.log.write_log("bot", coin_rate_msg)
 
-    def _login_handler(self, email, password):
+    def login_handler(self, remember=True, cookies=True):
 
-        user_email = self.__get_xpath_elem(user["user-email-field"]).send_keys(email)
-        user_password = self.__get_xpath_elem(user["user-password-field"]).send_keys(
-            password
-        )
-        user_remember_me = self._click(user["user-remember-me"])
-        self._click(user["user-login-btn"])
+        if (
+            self.driver.current_url != self.dash_board_url
+            or self.driver.current_url != self.login_url
+        ):
+            self.driver.get(self.login_url)
+            try:
+                with open("cookies", "rb") as f:
+                    cookies = pickle.load(f)
+                    for cookie in cookies:
+                        self.driver.add_cookie(cookie)
+                self.driver.refresh()
+
+            except Exception as e:
+
+                user_email = self.__get_xpath_elem(user["user-email-field"]).send_keys(
+                    self.user_mail
+                )
+                user_password = self.__get_xpath_elem(
+                    user["user-password-field"]
+                ).send_keys(self.user_pswd)
+
+                if remember:
+                    user_remember_me = self._click(user["user-remember-me"])
+                self._click(user["user-login-btn"])
+                self._random_wait(3, 5)
+
+                if cookies:
+                    with open("cookies", "wb") as f:
+                        pickle.dump(self.driver.get_cookies(), f)
 
     def get_main_reward(self):
 
         self.log.write_log("bot", self.log.green_text("MAIN REWARD"))
         if self.driver.current_url != self.dash_board_url:
             self.driver.get(self.dash_board_url)
+
+        self._modal_handler()
 
         try:
             if self.__check_main_reward_availability():

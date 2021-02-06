@@ -58,6 +58,24 @@ If you don't have Brave browser installed you can download it from here.
 </a>
 </p>
 
+### Changes
+
+- Added logic to save cookies and use them for logging in this prevents
+using the default profile directory of your browser and dosen't mess it up.
+
+- Added logic to close the welcome modal and chat which covered the dashboard
+visibilty.
+
+- Cookies are now saved to a cookie file if it is not present in the directory
+the bot will automatically login with the user email and password provided on 
+the config file and generate a new cookie file.
+
+- Added proxy incase you want to generate some referrals. This method is not
+recommended yet and try this at your own risk.
+
+- Fixed the issue when the browser was running in normal mode the bot closing all
+the open tabs.
+
 ### Installation
 
 create a virtual environment with virtualenv
@@ -81,22 +99,20 @@ pip install -r requirements.txt
 ### Setup
 
 Set the correct path for your brave browser in the config file config.py
-``` python
-"" Path to your defautl browser profile directory ""
-USER_DATA_DIR = "/home/darkstalker/.config/BraveSoftware/Brave-Browser"
+``` bash
+[Browser]
+browser-mode =              #takes two parameters headless or leave it empty
+driver-path =               #path to your chrome driver
+browser-binary-location =   #path to your browser binary location
 
-"" Path to your browser binary location ""
-BROWSER_BINARY_LOCATION = "/usr/bin/brave-browser"
+[User]
+mail =                      #Your faucet crypto account mail
+password =                  #your faucet crypto account password
 
-"" Path to your chromedriver binary path ""
-DRIVER_PATH = "/usr/local/bin/chromedriver"
-
-"" Headless mode flag runs the browser without UI ""
-# params: <headless> or <empty>
-DRIVER_MODE = ""
-
-"" If set to true will show warnings and errors in the terminal else logs it to error-logs.txt file ""
-DEBUG = False"
+[Misc]
+debug =                     #takes two arguments True of False
+proxy =                     #proxy address and port try not to use a proxy
+                             and leave this empty
 ```
 
 ### Run
@@ -127,5 +143,5 @@ DRIVER_MODE = "headless"
 Feel free to contribute to this project and help me improve this project
 
 
-Thank You, 
-    Sourav
+##### Thank You, 
+###### Sourav
