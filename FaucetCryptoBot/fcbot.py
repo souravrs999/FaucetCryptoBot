@@ -1,3 +1,4 @@
+import os
 import pickle5 as pickle
 
 from selenium import webdriver
@@ -186,10 +187,10 @@ class FaucetCryptoBot:
 
     def login_handler(self, remember=True, cookies=True):
 
-        if (
-            self.driver.current_url != self.dash_board_url
-            or self.driver.current_url != self.login_url
-        ):
+        if self.driver.current_url == self.dash_board_url:
+            pass
+
+        else:
             self.driver.get(self.login_url)
             try:
                 with open("cookies", "rb") as f:
@@ -209,12 +210,14 @@ class FaucetCryptoBot:
 
                 if remember:
                     user_remember_me = self._click(user["user-remember-me"])
+
                 self._click(user["user-login-btn"])
                 self._random_wait(3, 5)
 
                 if cookies:
-                    with open("cookies", "wb") as f:
-                        pickle.dump(self.driver.get_cookies(), f)
+                    if self.driver.current_url == self.dash_board_url:
+                        with open("cookies", "wb") as f:
+                            pickle.dump(self.driver.get_cookies(), f)
 
     def get_main_reward(self):
 
@@ -223,6 +226,9 @@ class FaucetCryptoBot:
             self.driver.get(self.dash_board_url)
 
         self._modal_handler()
+        if not os.path.exists("cookies"):
+            with open("cookies", "wb") as f:
+                pickle.dump(self.driver.get_cookies(), f)
 
         try:
             if self.__check_main_reward_availability():
