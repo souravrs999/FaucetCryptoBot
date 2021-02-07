@@ -67,7 +67,7 @@ class FaucetCryptoBot:
         user_mail = config.get("User", "mail")
         user_pswd = config.get("User", "password")
 
-        debug = config.get("Misc", "debug")
+        debug = config.getboolean("Misc", "debug")
         proxy = config.get("Misc", "proxy")
 
         return (
@@ -285,7 +285,7 @@ class FaucetCryptoBot:
         self.log.write_log("bot", earnable_coins_msg)
 
         if int(available_ads) > 0:
-            for ad_div_block_no in range(1, int(available_ads) + 1):
+            for ad_div_block_no in range(0, int(available_ads) + 1):
 
                 try:
                     ad_title = self.__get_xpath_elem(ptc_ads["ptc-ads-title"]).text
@@ -315,7 +315,7 @@ class FaucetCryptoBot:
                         self._click(ptc_ads["ptc-ads-continue-btn"])
                         self.__switch_tab()
                         self.log.write_log(
-                            "bot", f"Fininshed {ad_title} ad successfully"
+                            "success", f"Fininshed {ad_title} ad successfully"
                         )
                         self._random_wait(2, 4)
 
@@ -431,6 +431,9 @@ class FaucetCryptoBot:
                         self._random_wait(5, 7)
                         source = self.driver.execute_script("goto()")
                         self._random_wait(3, 5)
+                    self.log.write_log(
+                        "success", f"Fininshed shortlink successfully"
+                    )
 
                 except Exception as e:
 
@@ -479,6 +482,9 @@ class FaucetCryptoBot:
                         self._random_wait(5, 7)
                         source = self.driver.execute_script("goto()")
                         self._random_wait(3, 5)
+                    self.log.write_log(
+                        "success", f"Fininshed shortlink successfully"
+                    )
 
                 except Exception as e:
 
@@ -526,6 +532,9 @@ class FaucetCryptoBot:
                         self._random_wait(5, 7)
                         source = self.driver.execute_script("goto()")
                         self._random_wait(3, 5)
+                    self.log.write_log(
+                        "success", f"Fininshed shortlink successfully"
+                    )
 
                 except Exception as e:
 
