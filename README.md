@@ -33,16 +33,15 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 <!-- Status -->
 <p align="center">
 <br>
-<!-- <img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/> -->
-<img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/>
+<img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/>
+<!-- <img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/> -->
 </p>
 
 <!-- Status -->
 ### Status
 
-There seems to have been an update yesterday and the xpaths have changed please wait
-while i change the xpath and reupload it or you can do it yourself by updating the
-xpaths in xpath.py file.
+The issue of the bot was unable to find the claim button was fixed. The reason was due to an update in Faucet Crypto website. New xpaths have been updated you can copy the new xpaths to your old xpaths file.
+(keep and eye on the bot status for further changes and updates that might occur.)
 
 <!-- Description -->
 ## [Faucet Crypto]('https://faucetcrypto.com/')
