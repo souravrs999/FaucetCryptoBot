@@ -17,7 +17,7 @@ main_reward = {
     "main-reward-coins": "/html/body/div[1]/div[2]/main/div/div/div[2]/div[1]/div[1]/div/div/div[1]/h3",
     "main-reward-claim-timer": "/html/body/div[1]/div[2]/main/div/div/div[2]/div[1]/div[2]/div/div/div[1]/h3",
     "main-reward-captcha-block": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div/div/p",
-    "main-reward-claim-btn": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span/button",
+    "main-reward-claim-btn": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span[2]/button",
 }
 
 ptc_ads = {
@@ -31,7 +31,7 @@ ptc_ads = {
     "ptc-ads-reward-coins": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div[1]/div[2]/div[1]/div/div[2]/div",
     "ptc-ads-watch-button": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div[1]/div[2]/div[2]/span[1]/a",
     "ptc-ads-captcha-block": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div/div/p",
-    "ptc-ads-reward-claim-btn": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span/button",
+    "ptc-ads-reward-claim-btn": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span[2]/button",
     "ptc-ads-continue-btn": "/html/body/div[1]/div/div/div[1]/div[2]/div/div[2]/span/a",
 }
 
@@ -42,7 +42,7 @@ shortlinks = {
         "shortlinks-completed": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[2]/div/div/div[1]/h3",
         "shortlinks-available": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[3]/div/div/div[1]/h3",
         "shortlinks-earnable-coins": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[4]/div/div/div[1]/h3",
-        "shortlinks-reward-claim-btn": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span/button",
+        "shortlinks-reward-claim-btn": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/span[2]/button",
     },
     "exe.io": {
         "shortlinks-view-count": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]/div[1]/div[2]/div[1]/div/div[1]/div",

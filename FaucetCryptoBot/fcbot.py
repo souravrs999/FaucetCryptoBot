@@ -240,7 +240,7 @@ class FaucetCryptoBot:
                 self._random_wait(3, 5)
 
                 if self.__captcha_check(main_reward["main-reward-captcha-block"]):
-                    self._random_wait(14, 16)
+                    self._random_wait(16, 18)
                     self._click(
                         main_reward["main-reward-claim-btn"], "main reward claim button"
                     )
