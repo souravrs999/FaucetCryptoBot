@@ -33,12 +33,13 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 <!-- Status -->
 <p align="center">
 <br>
-<img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/>
-<!-- <img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/> -->
+<!-- <img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/> -->
+<img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/>
 </p>
 
 <!-- Status -->
 ### Status
+#### Don't use the bot until the status button turns green again the bot might be getting flagged when running in headless mode and to prevent any further problems associated with your accounts stop using it. I am not responsible for any accounts that might get banned in that way.
 
 The issue of the bot was unable to find the claim button was fixed. The reason was due to an update in Faucet Crypto website. New xpaths have been updated you can copy the new xpaths to your old xpaths file.
 (keep and eye on the bot status for further changes and updates that might occur.)
