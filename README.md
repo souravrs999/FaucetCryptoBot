@@ -33,16 +33,29 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 <!-- Status -->
 <p align="center">
 <br>
-<!-- <img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/> -->
-<img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/>
+
+<img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/>
+<!-- <img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/> -->
 </p>
 
 <!-- Status -->
 ### Status
-#### Don't use the bot until the status button turns green again the bot might be getting flagged when running in headless mode and to prevent any further problems associated with your accounts stop using it. I am not responsible for any accounts that might get banned in that way.
 
-The issue of the bot was unable to find the claim button was fixed. The reason was due to an update in Faucet Crypto website. New xpaths have been updated you can copy the new xpaths to your old xpaths file.
+- The xpaths have been updated and new xpaths have been written to xpath.py you can replace the new file with the old file. Since i had to rush throught this if i missed something please let me know
+
+- The layout of Faucet Crypto has changed and the bot won't work anymore you can wait for me to release the updated xpath file or you can add them manually to the xpath.py file.
+
+- The issue of the bot was unable to find the claim button was fixed. The reason was due to an update in Faucet Crypto website. New xpaths have been updated you can copy the new xpaths to your old xpaths file.
 (keep and eye on the bot status for further changes and updates that might occur.)
+
+<!-- Disclaimer -->
+### Disclaimer
+
+<p align="center">
+<img src="media/nuclear.gif" style="float: center; margin-right: 10px;" width="200"/>
+</p>
+
+Please be note that this is the first major automation project for me. I am by no means responsible for any usage of this tool, Account bans or Nuclear winter. Use it on your own behalf. I'm also not responsible if your account get's banned.Therefore, if the Faucet Crypto devs catches you and get you banned,then don't point your fingers at me, for getting your account deleted? I will rolling on the floor laughing at you.
 
 <!-- Description -->
 ## [Faucet Crypto]('https://faucetcrypto.com/')
