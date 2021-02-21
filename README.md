@@ -34,14 +34,14 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 <p align="center">
 <br>
 
-<!-- <img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/> -->
-<img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/>
+<img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/>
+<!-- <img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/> -->
 </p>
 
 <!-- Status -->
 ### Status
 
-- Don't use the bot anymore your account will get banned.
+- Seems like Faucet Crypto has started using a bot detection system so you may need to obfuscate your driver to prevent it's detection. Please see below for the detailed instructions.
 
 - The xpaths have been updated and new xpaths have been written to xpath.py you can replace the new file with the old file. Since i had to rush throught this if i missed something please let me know
 
@@ -54,7 +54,7 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 ### Disclaimer
 
 <p align="center">
-<img src="media/nuclear.gif" style="float: center; margin-right: 10px;" width="200"/>
+<img src="media/nuclear.gif" style="float: center; margin-right: 10px;" width="400"/>
 </p>
 
 Please be note that this is the first major automation project for me. I am by no means responsible for any usage of this tool, Account bans or Nuclear winter. Use it on your own behalf. I'm also not responsible if your account get's banned.Therefore, if the Faucet Crypto devs catches you and get you banned,then don't point your fingers at me, for getting your account deleted? I will rolling on the floor laughing at you.
@@ -83,6 +83,26 @@ If you don't have Brave browser installed you can download it from here.
 
 ### Changes
 
+###### v2.98
+- Added much better error codes
+- If the bot is run in headless mode it wont load images imporving load times significantly
+- Instructions for driver obfuscations have been provided
+- Much efficent compared to the previous versions
+- Achievements collector has also been added but its only experimental and is disabled by default in the bot.py
+file you can use this feature by uncommenting it
+- Also added a feature where the bot screenshots the stupid popup ads that creep in from time to time.
+- If the bot detects that the captcha is being triggered it will sleep for an hour before executing again.
+- Fake User Agent has been added
+- Option for completing fc.lc shortlinks added but disabled by default, cause it dosen't work always you can test it
+out by uncommenting the sections below it in `FaucetCryptoBot/fcbot.py`.
+- Bot automatically closes the modal and chat which was an issue in the previous version.
+- Resolved the issue where the watch button for sh.faucetcrypot.com was covered by the chat button and
+throwed an error.
+- Removed the annoying 'NoneType' object has no attribute 'text' errors.
+- Replaced pickle5 with pickle-mixin cause pickle5 was causing issues for windows users.
+- Changes in requirements.txt file
+
+###### v2.88
 - Added logic to save cookies and use them for logging in. This prevents
 using the default profile directory of your browser and dosen't mess it up.
 
@@ -118,6 +138,37 @@ Install all the necessary packages
 ```bash
 pip install -r requirements.txt
 ```
+
+### Important
+#### The following is important to better hide your chromedriver
+##### Replacing cdc_ string
+
+You can use vim or perl to replace the cdc_ string in chromedriver.
+Using vim or perl prevents you from having to recompile source code or use a hex-editor.
+
+###### Make sure to make a copy of the original chromedriver before attempting to edit it.
+
+Our goal is to alter the cdc_ string, which looks something like $cdc_lasutopfhvcZLmcfl.
+
+##### Using Vim
+```bash
+vim /path/to/chromedriver
+```
+After running the line above, you'll probably see a bunch of gibberish. Do the following:
+
+- Replace all instances of cdc_ with dog_ by typing :%s/cdc_/dog_/g.
+dog_ is just an example. You can choose anything as long as it has the same amount of characters as the search string (e.g., cdc_), otherwise the chromedriver will fail.
+
+- To save the changes and quit, type :wq! and press return.
+If you need to quit without saving changes, type :q! and press return.
+
+##### Using Pearl
+- The line below replaces all cdc_ occurrences with dog_.
+
+```bash
+perl -pi -e 's/cdc_/dog_/g' /path/to/chromedriver
+```
+- Make sure that the replacement string (e.g., dog_) has the same number of characters as the search string (e.g., cdc_), otherwise the chromedriver will fail.
 
 ### Setup
 
