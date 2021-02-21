@@ -1,6 +1,5 @@
 import os
 import pickle
-from datetime import datetime
 from fake_useragent import UserAgent
 
 from selenium import webdriver
