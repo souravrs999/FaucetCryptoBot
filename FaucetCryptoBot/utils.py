@@ -14,7 +14,9 @@ def draw_banner():
       /___  / (____  /____/ \___  /\___  /|__|   \______  /|__|   / ____|   ___/|__|  \____/
           \/        \/           \/     \/               \/        \/    |__|
 
-                                            Bot v2.88
+                                            Bot v2.98
+                                            
+                      Github: https://github.com/souravrs999/FaucetCryptoBot
      """
         + Fore.RESET
     )
