@@ -34,12 +34,14 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 <p align="center">
 <br>
 
-<img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/>
-<!-- <img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/> -->
+<!-- <img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/> -->
+<img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/>
 </p>
 
 <!-- Status -->
 ### Status
+
+- Don't use the bot anymore your account will get banned.
 
 - The xpaths have been updated and new xpaths have been written to xpath.py you can replace the new file with the old file. Since i had to rush throught this if i missed something please let me know
 
