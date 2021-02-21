@@ -49,5 +49,5 @@ class Log:
     def error_log(self, error_msg):
         if self.log:
             with open(self.logfile, "a") as log:
-                error_msg_line = f'[ {self.get_time()} ] [  ERROR  ] {str(error_msg)}\n'
+                error_msg_line = f'[ {self.get_time()} ] [  ERROR  ] {str(error_msg)}'
                 log.write(error_msg_line)
