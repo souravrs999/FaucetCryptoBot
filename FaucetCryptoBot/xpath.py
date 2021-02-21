@@ -75,6 +75,18 @@ shortlinks = {
     },
 }
 
+achievement = {
+    "achievement-total-amount": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[2]/div[1]/div/div/div[2]/h4",
+    "achievement-available-amount": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/h4",
+    "achievement-completed-amount": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[2]/div[3]/div/div/div[2]/h4",
+    "achievement-unlocked-amount": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[1]/div[2]/div[4]/div/div/div[2]/h4",
+    "achievement-level": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div/div/div[2]/nav/a[1]",
+    "achievement-ptc": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div/div/div[2]/nav/a[2]",
+    "achievement-shortlinks": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div/div/div[2]/nav/a[3]",
+    "achievement-other": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[3]/div/div/div[2]/nav/a[4]",
+    "achievement-grid": "/html/body/div[1]/div[2]/main/div/div/div[3]/div[5]",
+}
+
 faucet = {
     "faucet-current-step": "/html/body/div[2]/h2/span",
     "faucet-show-timer-btn": '//*[@id="showTimerText"]',
