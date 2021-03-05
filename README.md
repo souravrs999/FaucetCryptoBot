@@ -34,7 +34,7 @@ can do tasks like PTC ads, main rewards, and shortlinks except exe.io and fc.lc
 <p align="center">
 <br>
 
-<img src="https://img.shields.io/badge/STATUS-WORKING-00cc00.svg?style=for-the-badge" alt="Bot status"/>
+<img src="https://img.shields.io/badge/STATUS-NOT MAINTAINED-ffa500.svg?style=for-the-badge" alt="Bot status"/>
 <!-- <img src="https://img.shields.io/badge/STATUS-NOT WORKING-ff0000.svg?style=for-the-badge" alt="Bot status"/> -->
 </p>
 
